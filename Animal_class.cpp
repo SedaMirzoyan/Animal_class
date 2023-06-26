@@ -755,6 +755,9 @@ int main()
     Octopus octopus;
     octopus.Swim();
 
+    delete ptr;
+    delete ptr1;
+
     return 0;
 }
 
