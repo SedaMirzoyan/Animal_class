@@ -15,7 +15,7 @@ public:
         name = " ";
         count = 0;
 
-        count_arr = new int[count];
+        count_arr = nullptr;
     }
 
     Animal(std::string s, int c)
@@ -45,7 +45,7 @@ public:
 
     Animal& operator=(const Animal& ob)
     {
-        std::cout << "Animal Opeartor assignment\n";
+        std::cout << "Animal Operator assignment\n";
         if (this != &ob)
         {
             this->name = ob.name;
@@ -118,7 +118,7 @@ public:
         }
         else 
         {
-            std::cout << "Reptils are crawling\n";
+            std::cout << "Reptiles are crawling\n";
         }
     }
 
@@ -260,7 +260,7 @@ public:
 
     Sea_animals(bool f)
     {
-        std::cout << "Sea animals Default constructor\n";
+        std::cout << "Sea animals Parametrized constructor\n";
 
         is_fish = f;
     }
